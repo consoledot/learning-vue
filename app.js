@@ -6,6 +6,11 @@ const app = Vue.createApp({
       age: 23,
     };
   },
+  methods: {
+    changeTitle(title) {
+      this.title = title;
+    },
+  },
 });
 
 app.mount("#app");
