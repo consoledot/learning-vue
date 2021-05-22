@@ -9,11 +9,7 @@
   <body>
     <h1>Hello vue</h1>
     <div id="app">
-      <p>{{title}} - {{author}} - {{age}}</p>
-      <p v-if="age > 18">You are old enough to vote</p>
-      <button v-on:click="age++">Increase age</button>
-      <button @click="age--">Decrease age</button>
-      <div @click="changeTitle('Shadow and Bone')">Change book title</div>
+      <li v-for="book in books">{{book.title}} - {{book.author}}</li>
     </div>
     <script src="app.js"></script>
   </body>

@@ -1,9 +1,12 @@
 const app = Vue.createApp({
   data() {
     return {
-      title: "The final Empire",
-      author: "Oladele Hf",
-      age: 23,
+      url: "twitter.com/consoledot",
+      books: [
+        { title: "the way of kings", author: "patrick rofus" },
+        { title: "I love for the slander", author: "den mark" },
+        { title: "game of throne", author: "white dude" },
+      ],
     };
   },
   methods: {
